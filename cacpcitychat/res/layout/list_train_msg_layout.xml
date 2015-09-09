@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/train_msg_one_relativelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/train_image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <TextView
+            android:id="@+id/train_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/train_start_address_and_end_address_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/train_number"
+            android:text="asdasd"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/train_start_time_and_end_time_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/train_start_address_and_end_address_one"
+            android:layout_below="@id/train_start_address_and_end_address_one"
+            android:layout_marginTop="2dp"
+            android:text="asdasd"
+            android:textSize="16sp" />       
+        
+        <ImageView
+            android:id="@+id/chat_msg_back_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/train_below_img" />
+    </RelativeLayout>
+</RelativeLayout>
+<!--     
+        <ImageView
+            android:id="@+id/train_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/train_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/train_image"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            android:text="亲，已经帮你找到列车信息"
+			android:textSize="16sp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="3dp" >
+        
+        
+               <View
+            android:id="@+id/view_fenge_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/train_msg_one_relativelayout"
+            android:layout_marginBottom="5dp"
+            android:background="@color/view_fenge" />     -->
+
+

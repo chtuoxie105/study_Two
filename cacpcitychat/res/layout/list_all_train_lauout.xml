@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        >
+
+        <ImageView
+            android:id="@+id/train_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/train_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/train_image"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            android:text="亲，已经帮你找到列车信息"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <ListView
+            android:id="@+id/list_meg_train"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/train_image" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

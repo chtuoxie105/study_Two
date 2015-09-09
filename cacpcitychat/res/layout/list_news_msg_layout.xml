@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/train_image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <TextView
+            android:id="@+id/news_content_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="asdasd"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/news_msg_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/news_content_msg"
+            android:layout_alignLeft="@id/news_content_msg"
+            android:layout_marginTop="2dp"
+            android:text="asdasd"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/chat_news_msg_back_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/train_below_img" 
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+ 
+    <RelativeLayout
+        android:id="@+id/chat_top_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/title_background" >
+
+        <ImageView
+            android:id="@+id/cacpcitychat_title_imgage_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/cacpcitychat_title_imgage_back"
+            android:gravity="center"
+            android:text="智能聊天"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/chat_bottom_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/huise"
+        android:padding="4dp" >
+
+        <ImageView
+            android:id="@+id/cacptitychat_image_by_qq"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@android:color/white"
+            android:src="@drawable/chat_popwindom1" />
+
+        <Button
+            android:id="@+id/cacpcitychat_send_message_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="发送" />
+
+        <EditText
+            android:id="@+id/cacpcitychat_write_message_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@id/cacpcitychat_send_message_btn"
+            android:layout_toRightOf="@id/cacptitychat_image_by_qq"
+            android:background="@android:color/white" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/cacpcitychat_msg_content_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chat_top_relative_layout"
+        android:layout_above="@id/chat_bottom_relative_layout" 
+         android:background="@drawable/chat_bg"
+         android:stackFromBottom="true">
+    </ListView>
+    
+</RelativeLayout>

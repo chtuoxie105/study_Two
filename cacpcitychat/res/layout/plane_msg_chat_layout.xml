@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <TextView
+            android:id="@+id/plane_msg_flight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:text="航班G2580:"/>
+
+        <TextView
+             android:id="@+id/plane_msg_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" 
+             android:text="航班开始时间-"
+             android:gravity="center_vertical"
+             android:layout_marginTop="15dp"
+             android:layout_marginLeft="3dp"
+             android:layout_toRightOf="@id/plane_msg_flight"/>
+
+        <TextView android:id="@+id/plane_msg_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" 
+            android:gravity="center_vertical"
+             android:layout_marginTop="15dp"
+             android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/plane_msg_start_time"
+             android:text="航班结束时间"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/plane_msg" />
+    </RelativeLayout>
+
+</RelativeLayout>
